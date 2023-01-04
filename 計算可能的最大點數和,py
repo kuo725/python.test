@@ -1,0 +1,17 @@
+while True:  
+    num = list(map(int,input().split()))  
+      
+    b = 0  
+      
+    while(num!=[]):  
+        try:  
+            t = max(num)  
+            num.remove(t)  
+            t = max(num)  
+            num.remove(t)  
+            b+=t  
+            t = min(num)  
+            num.remove(t)  
+        except:  
+            t=0  
+    print(b)
